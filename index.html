@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  
+  <!-- HEADER -->
+ <header class="header">
+  <h1>IP Address Tracker</h1>
+
+  <div class="search-box">
+    <input type="text" id="ipInput" placeholder="Search for any IP address or domain">
+    <button id="searchBtn">
+      <img src="images/icon-arrow.svg" />
+    </button>
+  </div>
+</header>
+
+  <!-- INFO BOX -->
+  <section class="info">
+    <div>
+      <p>IP ADDRESS</p>
+      <h2 id="ip"></h2>
+    </div>
+    <div>
+      <p>LOCATION</p>
+      <h2 id="location"></h2>
+    </div>
+    <div>
+      <p>TIMEZONE</p>
+      <h2 id="timezone"></h2>
+    </div>
+    <div>
+      <p>ISP</p>
+      <h2 id="isp"></h2>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
